@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Get Meal By ingredients </title>
+    <!-- Font Awesome CDN-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header of the Website-->
+    <header id="header">
+        <nav>
+            <a href="index.html"> <i class="fas fa-mortar-pestle"> </i> </a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="#header"> HOME </a> </li>
+                    <li> <a href="#find"> SEARCH INGREDIENTS </a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> Good soup is one of the prime ingredients of good living </h1>
+            <p> An &nbsp;<mark>ingredient </mark> &nbsp;is a substance that forms part of a mixture (in a general sense). 
+                For example, in cooking, recipes specify which ingredients are used to prepare a specific dish.
+                 In the pharmaceutical industry, an active ingredient is that part of a formulation that yields the
+                  effect expected by the customer. </p>
+        </div>
+    </header>
+    <!-- End of Header-->
+
+    <div class="container" id="find">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title"> Find Meals for your ingredients.</h2>
+                <blockquote>
+                    Real Footextd doesn't have ingredients, Real
+                    food is ingredients <br>
+                    <cite>-By Reshabh</cite>
+                </blockquote>
+                <div class="mealSearchBox">
+                    <form action="#">
+                        <input type="text" class="search" placeholder="Enter An Ingredients" id="search" value ="" required>
+                        <button type="submit" class="search-btn" id="search-btn">
+                            <i class="fas fa-search"> </i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="meal-result" style="display: none;">
+                <h2 class="title" data-id="hello"> Your Search Results: </h2>
+                <div id="meal">
+                    <!-- meal items will be here-->
+                        <!-- <div class="meal-item">
+                            <div class="meal-img">
+                                <img src="images/hare.png" alt="food image">
+                            </div>
+                            <div class="meal-name">
+                                <h3> Potato Chips</h3>
+                                <a href="#" class="recepie-btn">
+                                    Get Recipe
+                                </a>
+                            </div>
+                        </div> -->
+                    <!-- end of meal items will be here-->
+                </div>
+            </div>
+            <div class="meal-details">
+                <!-- recipe close btn-->
+                <button type="button" class="btn recepie-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <!-- Meal content-->
+                <div class="meal-details-content">
+                    <!-- <h2 class="recepie title"> Meals Name Here</h2>
+                    <p class="recipe-category"> Category Name</p>
+                    <div class="recipe-instruct">
+                      <h3> Instructions </h3>
+                      <p> Lorem ipsum dolor sit amet consectetur, adi
+                          pisicing elit. Facilis tenetur quae quos et
+                           distinctio voluptas impedit incidunt expedi
+                           ta optio officia officiis labore vitae inve
+                           ntore, sequi dolores recusandae doloremque 
+                           similique numquam.
+                           Lorem ipsum dolor sit amet consectetur, adi
+                           pisicing elit. Facilis tenetur quae quos et
+                            distinctio voluptas impedit incidunt expedi
+                            ta optio officia officiis labore vitae inve
+                            ntore, sequi dolores recusandae doloremque 
+                            similique numquam.
+                      </p>
+                      <div class="recipe-meal-img">
+                          <img src="images/hare.png" alt="">
+                      </div>
+                      <div class="recipe-link">
+                           <a href="#" target="_blank"> watch Video</a>
+                      </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+        <h4> About Us </h4>
+        <p> Ingredients are the things that are used to make something, especially all the different foods you use when you are cooking a particular dish.An 
+            ingredient of a situation is one of the essential parts of it. </p>
+        <p> Made with <i class="fa fa-heart"> </i> By Reshabh. </p>
+    </footer>
+    <!-- JavaScript for navigation Bar -->
+    <script>
+        let menu = document.querySelector(".nav-links");
+        function hideMenu() {
+            menu.style.right = "-200px";
+            menu.style.display = "block";
+        }
+        function showMenu() {
+            menu.style.right = "0px";
+            menu.style.display = "block";
+        }
+    </script>
+    <!-- Custiom JavaScript-->
+    <script src="js/script.js"> </script>
+</body>
+
+</html>
